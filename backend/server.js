@@ -34,7 +34,7 @@ if (process.env.NODE_ENV === "production") {
   );
 } else {
   app.get("/", (req, res) => {
-    res.send(`API is running..............${process.env.NODE_ENV}`);
+    res.send(`API is running..............`);
   });
 }
 
@@ -54,7 +54,7 @@ const io = require("socket.io")(server, {
   },
 });
 
-io.set("origins", "*:*");
+// io.set("origins", "*:*");
 io.on("connection", (socket) => {
   console.log("Connected to Socket.io");
 
