@@ -54,6 +54,7 @@ const io = require("socket.io")(server, {
   },
 });
 
+io.set("origins", "*:*");
 io.on("connection", (socket) => {
   console.log("Connected to Socket.io");
 
