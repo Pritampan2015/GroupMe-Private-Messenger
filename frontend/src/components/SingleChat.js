@@ -21,7 +21,7 @@ import io from "socket.io-client";
 import Lottie from "react-lottie";
 import animationData from "../animations/typing.json";
 
-const ENDPOINT = "https://groupme-private-messenger.onrender.com";
+const ENDPOINT = "http://localhost:5000";
 
 var socket, selectedChatCompare;
 
@@ -266,7 +266,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
           justifyContent="center"
           height="100%"
         >
-          <Text fontSize="3xl" pb={3} fontFamily="Work sans">
+          <Text fontSize="3xl" pb={3} fontFamily="Work-sans" color={"white"}>
             Click on a User to Start Chatting
           </Text>
         </Box>

@@ -52,6 +52,8 @@ const MyChats = ({ fetchAgain }) => {
       w={{ base: "100%", md: "31%" }}
       borderRadius="lg"
       borderWidth="1px"
+      // bgColor={"cyan"}
+      //left my chats outer border color
     >
       <Box
         pb={3}
@@ -84,6 +86,8 @@ const MyChats = ({ fetchAgain }) => {
         height="100%"
         borderRadius="lg"
         overflowY="hidden"
+        //target mychat color
+        // bgColor={"red"}
       >
         {chats ? (
           <Stack overflowY="scroll">

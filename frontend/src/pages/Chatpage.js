@@ -20,6 +20,7 @@ const Chatpage = () => {
         w="100%"
         h="91.5vh"
         p="10px"
+        // bgColor={"cyan"}
       >
         {user && <MyChats fetchAgain={fetchAgain} />}
 
